@@ -1,0 +1,442 @@
+[{
+    "rank": "1",
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "cmc": "1",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "19564087",
+    "max_supply": "21000000",
+    "total_supply": "19564087",
+    "quote": {
+        "USD": {
+            "price": "43756.108125227",
+            "market_cap": "856048306143.35",
+            "vol_24H": "24743886645.582",
+            "percentage_change_1h": "0.2273",
+            "percentage_change_24h": "1.1092",
+            "percentage_change_7d": "13.9697"
+        }
+    }
+},
+{
+    "rank": "2",
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "cmc": "1027",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "120220036.17226",
+    "max_supply": null,
+    "total_supply": "120220036.17226",
+    "quote": {
+        "USD": {
+            "price": "2367.1864719568",
+            "market_cap": "284583243285.14",
+            "vol_24H": "15515838975.223",
+            "percentage_change_1h": "-0.1365",
+            "percentage_change_24h": "5.1857",
+            "percentage_change_7d": "13.3262"
+        }
+    }
+},
+{
+    "rank": "3",
+    "name": "Tether USDt",
+    "symbol": "USDT",
+    "cmc": "825",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "90255875639.263",
+    "max_supply": null,
+    "total_supply": "92609080553.208",
+    "quote": {
+        "USD": {
+            "price": "1.0001912178304",
+            "market_cap": "90273134171.984",
+            "vol_24H": "51235649610.066",
+            "percentage_change_1h": "0.0067",
+            "percentage_change_24h": "-0.0238",
+            "percentage_change_7d": "0.0039"
+        }
+    }
+},
+{
+    "rank": "4",
+    "name": "BNB",
+    "symbol": "BNB",
+    "cmc": "1839",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "151697205.04197",
+    "max_supply": null,
+    "total_supply": "151697205.04197",
+    "quote": {
+        "USD": {
+            "price": "235.41045290192",
+            "market_cap": "35711107742.886",
+            "vol_24H": "837757731.82179",
+            "percentage_change_1h": "0.06",
+            "percentage_change_24h": "1.9499",
+            "percentage_change_7d": "3.0729"
+        }
+    }
+},
+{
+    "rank": "5",
+    "name": "XRP",
+    "symbol": "XRP",
+    "cmc": "52",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "53757460767",
+    "max_supply": "100000000000",
+    "total_supply": "99988170772",
+    "quote": {
+        "USD": {
+            "price": "0.65490666779958",
+            "market_cap": "35206119500.282",
+            "vol_24H": "1477433044.0725",
+            "percentage_change_1h": "0.8774",
+            "percentage_change_24h": "3.167",
+            "percentage_change_7d": "7.4907"
+        }
+    }
+},
+{
+    "rank": "6",
+    "name": "Solana",
+    "symbol": "SOL",
+    "cmc": "5426",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "426047005.99843",
+    "max_supply": null,
+    "total_supply": "564361106.62824",
+    "quote": {
+        "USD": {
+            "price": "73.281326376338",
+            "market_cap": "31221289698.233",
+            "vol_24H": "4063366751.4797",
+            "percentage_change_1h": "-0.1006",
+            "percentage_change_24h": "13.9954",
+            "percentage_change_7d": "20.5607"
+        }
+    }
+},
+{
+    "rank": "7",
+    "name": "USDC",
+    "symbol": "USDC",
+    "cmc": "3408",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "24358615390.521",
+    "max_supply": null,
+    "total_supply": "24358615390.521",
+    "quote": {
+        "USD": {
+            "price": "1.0003533064311",
+            "market_cap": "24367221445.99",
+            "vol_24H": "6842671530.6401",
+            "percentage_change_1h": "0.0218",
+            "percentage_change_24h": "0.0319",
+            "percentage_change_7d": "0.0539"
+        }
+    }
+},
+{
+    "rank": "8",
+    "name": "Cardano",
+    "symbol": "ADA",
+    "cmc": "2010",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "35317760304.837",
+    "max_supply": "45000000000",
+    "total_supply": "36424942625.352",
+    "quote": {
+        "USD": {
+            "price": "0.51831659509252",
+            "market_cap": "18305781267.497",
+            "vol_24H": "930449364.10351",
+            "percentage_change_1h": "0.734",
+            "percentage_change_24h": "18.5439",
+            "percentage_change_7d": "36.0938"
+        }
+    }
+},
+{
+    "rank": "9",
+    "name": "Dogecoin",
+    "symbol": "DOGE",
+    "cmc": "74",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "142148696383.71",
+    "max_supply": null,
+    "total_supply": "142148696383.71",
+    "quote": {
+        "USD": {
+            "price": "0.098276120747177",
+            "market_cap": "13969822449.859",
+            "vol_24H": "1006922296.1044",
+            "percentage_change_1h": "0.358",
+            "percentage_change_24h": "3.6417",
+            "percentage_change_7d": "17.6764"
+        }
+    }
+},
+{
+    "rank": "10",
+    "name": "Avalanche",
+    "symbol": "AVAX",
+    "cmc": "5805",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "365789486.73749",
+    "max_supply": "720000000",
+    "total_supply": "433822396.73749",
+    "quote": {
+        "USD": {
+            "price": "27.367187123574",
+            "market_cap": "10010629331.381",
+            "vol_24H": "891524222.7511",
+            "percentage_change_1h": "-1.1319",
+            "percentage_change_24h": "2.0562",
+            "percentage_change_7d": "22.6087"
+        }
+    }
+},
+{
+    "rank": "11",
+    "name": "TRON",
+    "symbol": "TRX",
+    "cmc": "1958",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "88479462992.262",
+    "max_supply": null,
+    "total_supply": "88479482686.837",
+    "quote": {
+        "USD": {
+            "price": "0.10601049839076",
+            "market_cap": "9379751969.1563",
+            "vol_24H": "289295311.38541",
+            "percentage_change_1h": "0.0274",
+            "percentage_change_24h": "2.5542",
+            "percentage_change_7d": "2.0267"
+        }
+    }
+},
+{
+    "rank": "12",
+    "name": "Chainlink",
+    "symbol": "LINK",
+    "cmc": "1975",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "556849970.45279",
+    "max_supply": "1000000000",
+    "total_supply": "1000000000",
+    "quote": {
+        "USD": {
+            "price": "16.411128976442",
+            "market_cap": "9138536685.6284",
+            "vol_24H": "863312344.37607",
+            "percentage_change_1h": "0.076",
+            "percentage_change_24h": "9.8922",
+            "percentage_change_7d": "10.8362"
+        }
+    }
+},
+{
+    "rank": "13",
+    "name": "Polkadot",
+    "symbol": "DOT",
+    "cmc": "6636",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "1253808292.3595",
+    "max_supply": null,
+    "total_supply": "1386068794.0678",
+    "quote": {
+        "USD": {
+            "price": "6.5887493832545",
+            "market_cap": "8261028613.0028",
+            "vol_24H": "333155580.29523",
+            "percentage_change_1h": "4.0056",
+            "percentage_change_24h": "9.4857",
+            "percentage_change_7d": "21.206"
+        }
+    }
+},
+{
+    "rank": "14",
+    "name": "Polygon",
+    "symbol": "MATIC",
+    "cmc": "3890",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "9282873680.9348",
+    "max_supply": "10000000000",
+    "total_supply": "10000000000",
+    "quote": {
+        "USD": {
+            "price": "0.88265955331161",
+            "market_cap": "8193617136.662",
+            "vol_24H": "613532543.55036",
+            "percentage_change_1h": "0.5777",
+            "percentage_change_24h": "7.297",
+            "percentage_change_7d": "12.7433"
+        }
+    }
+},
+{
+    "rank": "15",
+    "name": "Toncoin",
+    "symbol": "TON",
+    "cmc": "11419",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "3437973709.9668",
+    "max_supply": null,
+    "total_supply": "5082857361.3074",
+    "quote": {
+        "USD": {
+            "price": "2.3083487680873",
+            "market_cap": "7936042378.1182",
+            "vol_24H": "42711396.791512",
+            "percentage_change_1h": "-0.2426",
+            "percentage_change_24h": "0.9861",
+            "percentage_change_7d": "-4.5936"
+        }
+    }
+},
+{
+    "rank": "16",
+    "name": "Shiba Inu",
+    "symbol": "SHIB",
+    "cmc": "5994",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "589346914631300",
+    "max_supply": null,
+    "total_supply": "589589040239380",
+    "quote": {
+        "USD": {
+            "price": "0.000010057148109068",
+            "market_cap": "5927149208.0693",
+            "vol_24H": "299119664.46935",
+            "percentage_change_1h": "0.0157",
+            "percentage_change_24h": "5.1834",
+            "percentage_change_7d": "20.8809"
+        }
+    }
+},
+{
+    "rank": "17",
+    "name": "Crypto.com Coin",
+    "symbol": "CRO",
+    "cmc": "3635",
+    "update": "1 year ago",
+    "update_time": "2022-02-23 16:10:00",
+    "circulating_supply": "25263013692",
+    "max_supply": "30263013692",
+    "total_supply": "30263013692",
+    "quote": {
+        "USD": {
+            "price": "0.41177830020631",
+            "market_cap": "10402760836.18",
+            "vol_24H": "122001254.64196",
+            "percentage_change_1h": "-0.6064",
+            "percentage_change_24h": "4.3234",
+            "percentage_change_7d": "-13.6341"
+        }
+    }
+},
+{
+    "rank": "17",
+    "name": "Litecoin",
+    "symbol": "LTC",
+    "cmc": "2",
+    "update": "2 minutes ago",
+    "update_time": "2023-12-08 12:46:00",
+    "circulating_supply": "73957889.09802",
+    "max_supply": "84000000",
+    "total_supply": "84000000",
+    "quote": {
+        "USD": {
+            "price": "75.91182294565",
+            "market_cap": "5614278182.6429",
+            "vol_24H": "421369595.30041",
+            "percentage_change_1h": "0.2876",
+            "percentage_change_24h": "3.7134",
+            "percentage_change_7d": "7.0113"
+        }
+    }
+},
+{
+    "rank": "18",
+    "name": "Dai",
+    "symbol": "DAI",
+    "cmc": "4943",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "5347888595.7464",
+    "max_supply": null,
+    "total_supply": "5347888595.7464",
+    "quote": {
+        "USD": {
+            "price": "1.0002695958133",
+            "market_cap": "5349330364.1216",
+            "vol_24H": "324348532.94752",
+            "percentage_change_1h": "-0.0155",
+            "percentage_change_24h": "-0.0159",
+            "percentage_change_7d": "0.1024"
+        }
+    }
+},
+{
+    "rank": "19",
+    "name": "Bitcoin Cash",
+    "symbol": "BCH",
+    "cmc": "1831",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "19579993.75",
+    "max_supply": "21000000",
+    "total_supply": "19579993.75",
+    "quote": {
+        "USD": {
+            "price": "249.92945037258",
+            "market_cap": "4893617076.236",
+            "vol_24H": "182924459.91432",
+            "percentage_change_1h": "0.1573",
+            "percentage_change_24h": "2.4711",
+            "percentage_change_7d": "11.3417"
+        }
+    }
+},
+{
+    "rank": "20",
+    "name": "Cosmos",
+    "symbol": "ATOM",
+    "cmc": "3794",
+    "update": "3 minutes ago",
+    "update_time": "2023-12-08 12:45:00",
+    "circulating_supply": "378163025",
+    "max_supply": null,
+    "total_supply": "378163025",
+    "quote": {
+        "USD": {
+            "price": "10.242495414047",
+            "market_cap": "3873333049.3247",
+            "vol_24H": "168886582.38207",
+            "percentage_change_1h": "0.7386",
+            "percentage_change_24h": "5.8046",
+            "percentage_change_7d": "8.9322"
+        }
+    }
+}
+]
