@@ -8,6 +8,9 @@ var logger = require('morgan');
 var mongoose = require("mongoose");
 var configs = require("./config/globals");
 
+var passport = require("passport");
+var BasicStrategy = require("passport-http").BasicStrategy;
+
 var indexRouter = require('./routes/index');
 var cryptosRouter = require('./routes/api/cryptos');
 // var usersRouter = require('./routes/users');
@@ -24,7 +27,79 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Initialize passport and strategy before routes definition
+app.use(passport.initialize());
+// Basic Strategy uses base64 encoded string with format 'username:password'
+passport.use(
+  new BasicStrategy((username, password, done) => {
+    // Provide code to find user and validate password
+    // hardcode credentials admin:default
+    // Valid login YWRtaW46dXBhc2hhbjEyMw==
+    if (username == "admin" && password == "upashan123") {
+      console.log(`User ${username} authenticated successfully!`);
+      return done(null, username);
+    } else {
+      console.log(`User ${username} authentication failed!`);
+      return done(null, false); // false means no user was accepted
+    }
+    // Example with mongoose model from https://github.com/jaredhanson/passport-http
+    // Add a user.js model in /models
+    // Add a signup page and handle adding user to the DB
+    // Replace the hardcoded user with the code below:
+    // User.findOne({ username: username }, function (err, user) {
+    //   if (err) {
+    //     return done(err);
+    //   }
+    //   if (!user) {
+    //     return done(null, false);
+    //   }
+    //   if (!user.verifyPassword(password)) {
+    //     return done(null, false);
+    //   }
+    //   return done(null, user);
+    // });
+  })
+);
+
+// Import CORS to fix fetch error in SwaggerUI 
+var cors = require("cors");
+// Packages for Documenting the API
+var swaggerUI = require("swagger-ui-express");
+// Manual documentation approach, load YAML file into object and to render it
+var YAML = require("yamljs");
+var swaggerDocument = YAML.load("./documentation/api-specification.yaml");
+// Comments approach
+var swaggerJSDoc = require("swagger-jsdoc");
+var options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "Project Tracker API",
+      version: "1.0.0",
+    },
+    servers: [
+      {
+        url: "http://localhost:3000/api"
+      }
+    ]
+  },
+  apis: ["./routes/api/*.js"], // paths to files containing annotations
+}
+var swaggerSpec = swaggerJSDoc(options);
+// Load file from URL
+var specfileURL = "http://petstore.swagger.io/v2/swagger.json";
+var optionsForURL = {
+  swaggerOptions: {
+    url: specfileURL
+  }
+}
+
 app.use('/', indexRouter);
+app.use(
+  "/api/cryptos",
+  passport.authenticate("basic", { session: false }),
+  cryptosRouter
+);
 app.use("/api/cryptos",cryptosRouter);
 // app.use('/users', usersRouter);
 

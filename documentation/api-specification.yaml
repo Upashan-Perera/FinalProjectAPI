@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: "Crypto Tracker API"
+  version: "1.1"
+  contact:
+    name: Upashan Perera
+    email: 200495186@student.georgianc.on.ca
+    url: https://upashanperera.000webhostapp.com/
+servers:
+  - url: https://finalprojectapi-dev.onrender.com 
+tags:
+  - name: Georgian College
+    description: college name
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+paths:
+  /cryptos:
+    get:
+      tags:
+        - "Georgian College"
+      security:
+        - basicAuth: []
+      description: Returns a list of cryptos
+      parameters:
+        - name: status
+          in: query
+          required: false
+          description: Information about the cryptos
+          schema:
+            type: string
+            enum:
+              - TO DO
+              - IN PROGRESS
+              - DONE
+        - name: course
+          in: query
+          required: false
+          description: Course that the project belongs to
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Unfiltered list of projects
