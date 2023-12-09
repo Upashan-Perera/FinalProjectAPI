@@ -8,7 +8,7 @@ info:
     url: https://upashanperera.000webhostapp.com/
 servers:
   # - url: 
-  - url: https://finalprojectapi-dev.onrender.com/api
+  - url: http://localhost:3000/api
 tags:
   - name: Georgian College
     description: college name
