@@ -15,7 +15,7 @@ live site -: https://finalprojectapi-dev.onrender.com/
 Username -: admin
 Password -: YWRtaW46dXBhc2hhbjEyMw== (upashan123)
 
-
+http://localhost:3000/docs/#/Georgian%20College/get_cryptos
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Technologies used:
