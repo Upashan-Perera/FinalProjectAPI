@@ -28,7 +28,7 @@ var options = {
     },
     servers: [
       {
-        url: "https://finalprojectapi-dev.onrender.com/api"
+        url: "http://localhost:3000/api"
       }
     ]
   },
