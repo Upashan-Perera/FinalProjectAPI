@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 // Import Project model
-const Crypto = require('../../models/crypto')
+const Crypto = require('../../models/crypto');
+const pageSize = 10;
+
 
 router.get('/', async (req,res,next) => {
     // for now, just enter success
@@ -18,6 +20,63 @@ router.get('/', async (req,res,next) => {
     let cryptos = await Crypto.find();
     res.status(200).json(cryptos);
 })
+
+// GET /cryptos
+/**
+ * @openapi
+ * /cryptos:
+ *   get:
+ *     description: Lists all cryptos
+ *     responses:
+ *       200:
+ *         description: Returns an unfiltered list of cryptos
+ */
+
+// // GET /cryptos
+// router.get('/', (req, res, next) => {
+//   // Filter the list via optional URL query string parameters
+//   // using the req.query object
+//   // Expected query string ?status=STARTED&course=WebAPI
+  
+//   // create variable for storing page number
+//   // extract value from query string
+//   // Expected ?page=1
+//   let page = req.query.page || 1; // default to page 1 
+//   // calculate how many records to skip
+//   // page 1 shows records 1 to 10 so skip 0
+//   // page 2 shows records 11 to 20 so skip 10
+//   let skipSize = pageSize * (page - 1);
+
+//   // create empty query object
+//   let query = {};
+//   // if course is included in request, then add it to query object
+//   if (req.query.name)
+//   {
+//       query.name = req.query.name;
+//   }
+//   // if status is included in request, then add it to query object
+//   if (req.query.rank)
+//   {
+//       query.rank = req.query.rank;
+//   }
+
+//   // Modify find() to accept query
+//   Crypto.find(
+//       query, // filter 
+//       (err, cryptos) => { // callback
+//           if (err) {
+//               console.log(err);
+//               res.status(500).json({ 'ErrorMessage': 'Server threw an exception' });
+//           }
+//           else {
+//               res.status(200).json(cryptos);
+//           }
+//       })
+//       // implement pagination
+//       .sort({ name: 1 }) // to achieve a consistent result sort by name A to Z
+//       .limit(pageSize) // set page size limit
+//       .skip(skipSize); // 'jump' to the first element in page x
+// });
 
 // C mapped to POST
 router.post("/", async (req, res, next) => {
