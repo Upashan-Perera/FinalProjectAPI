@@ -8,6 +8,7 @@ info:
     url: https://upashanperera.000webhostapp.com/
 servers:
   - url: https://finalprojectapi-dev.onrender.com 
+  - url: http://localhost:3000/api
 tags:
   - name: Georgian College
     description: college name
@@ -24,23 +25,7 @@ paths:
       security:
         - basicAuth: []
       description: Returns a list of cryptos
-      parameters:
-        - name: status
-          in: query
-          required: false
-          description: Information about the cryptos
-          schema:
-            type: string
-            enum:
-              - TO DO
-              - IN PROGRESS
-              - DONE
-        - name: course
-          in: query
-          required: false
-          description: Course that the project belongs to
-          schema:
-            type: string
+    
       responses:
         "200":
-          description: Unfiltered list of projects
+          description: Unfiltered list of cryptos

@@ -10,6 +10,8 @@ var configs = require("./config/globals");
 
 var passport = require("passport");
 var BasicStrategy = require("passport-http").BasicStrategy;
+// Import CORS to fix fetch error in SwaggerUI 
+var cors = require("cors");
 
 var indexRouter = require('./routes/index');
 var cryptosRouter = require('./routes/api/cryptos');
@@ -20,7 +22,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -61,38 +63,7 @@ passport.use(
   })
 );
 
-// Import CORS to fix fetch error in SwaggerUI 
-var cors = require("cors");
-// Packages for Documenting the API
-var swaggerUI = require("swagger-ui-express");
-// Manual documentation approach, load YAML file into object and to render it
-var YAML = require("yamljs");
-var swaggerDocument = YAML.load("./documentation/api-specification.yaml");
-// Comments approach
-var swaggerJSDoc = require("swagger-jsdoc");
-var options = {
-  definition: {
-    openapi: "3.0.0",
-    info: {
-      title: "Project Tracker API",
-      version: "1.0.0",
-    },
-    servers: [
-      {
-        url: "http://localhost:3000/api"
-      }
-    ]
-  },
-  apis: ["./routes/api/*.js"], // paths to files containing annotations
-}
-var swaggerSpec = swaggerJSDoc(options);
-// Load file from URL
-var specfileURL = "http://petstore.swagger.io/v2/swagger.json";
-var optionsForURL = {
-  swaggerOptions: {
-    url: specfileURL
-  }
-}
+
 
 app.use('/', indexRouter);
 app.use(
